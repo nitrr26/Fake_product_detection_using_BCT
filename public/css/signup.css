@@ -1,0 +1,69 @@
+
+
+#registrationform .container {
+  width: 385px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+#registrationform input[type="text"],
+input[type="password"] {
+  width: 350px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#registrationform input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+#registrationform hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+#registrationform .registerbtn {
+  background-color: rgb(12, 85, 219);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 350px;
+  opacity: 0.9;
+}
+
+#registrationform .registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+#registrationform a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+#registrationform .login {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#registrationform .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+#registrationform img.avatar {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}

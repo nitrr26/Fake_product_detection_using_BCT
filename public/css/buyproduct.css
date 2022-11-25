@@ -1,0 +1,17 @@
+#buyproduct input[type="text"] {
+  width: 350px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#buyproduct input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#buyproduct .secondarybtn{
+  width: 350px;
+}

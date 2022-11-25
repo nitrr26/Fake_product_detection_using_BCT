@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  /* background: rgb(184, 63, 224);
+  background: linear-gradient(
+    111deg,
+    rgba(184, 63, 224, 1) 0%,
+    rgba(242, 18, 177, 1) 100%,
+    rgba(247, 255, 255, 1) 100%
+  ); */
+  padding: 5px 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.hover-effect-1:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.logo {
+  flex: 1;
+  color: #0e2431;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+nav ul li.logo span {
+  color: rgb(250, 244, 244);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+nav ul li:hover a {
+  color: cyan;
+}
+nav ul li i {
+  font-size: 23px;
+}
+nav ul li.btn {
+  display: none;
+}
+nav ul li.btn.hide i:before {
+  content: "\f00d";
+}
+
+.nav-primary {
+  background-color: rgb(12, 85, 219);
+  color: white;
+  border: none;
+  height: 25px;
+  width: 75px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.nav-primary:hover {
+  cursor: pointer;
+}
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show {
+    display: block;
+  }
+  nav ul li.btn {
+    display: block;
+  }
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff, inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+
+  .nav-primary {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+    text-transform: lowercase;
+  }
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+/* //this code is resposible for smooth behaviour */
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+.outercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+  padding: 5%;
+}
+
+.container {
+  width: 385px;
+  padding: 16px;
+  background-color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 400px;
+  /* Could be more or less, depending on screen size */
+  height: 400px;
+}
+
+
+.secondarybtn {
+  background-color: rgb(12, 85, 219);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  display: inline;
+}
+
+
+
+.abutton {
+  background-color: rgb(12, 85, 219);
+  color: white;
+  padding: 14px 28px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  display: inline;
+  font-size: small;
+  text-decoration: none;
+}
+
+.abutton:focus,
+.abutton:hover {
+  background-color: FireBrick;
+  color: White;
+}
+
+.formbox {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.sectionbox{
+  position: relative;
+  z-index: 10;
+}

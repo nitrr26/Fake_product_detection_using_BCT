@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/buyproduct.css">
+    <title>Minor Project | Blockchain Technology</title>
+</head>
+
+<body onload="connectContract()">
+
+    <div class="hero">
+
+        <div>
+            <nav class="sectionbox">
+                <ul>
+                    <li class="logo"><a href="./home2.html">Minor<span>Project</span></a></li>
+                    <li class="items hover-effect-1"><a href="./addproduct.html">Add products</a></li>
+                    <li class="items hover-effect-1"><a href="./checkproduct.html">Check Products</a></li>
+                    <li class="items hover-effect-1"><a href="./buyproduct.html">Buy Products</a></li>
+                    <li class="items hover-effect-1"><a href="./sendproduct.html">Send Products</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <section id="buyproduct" class="sectionbox">
+                <div class="outercontainer">
+                    <form style="height: 500px" class="modal-content animate formbox" action="/">
+                        <div class="container">
+                            <h2>Enter Product ID to buy...</h2>
+                            <br>
+                            <br>
+                            <label for="productid"><b>Product ID</b></label>
+                            <input type="text" placeholder="Enter product ID" name="productid" id="productid"
+                                class="buyproductfield" required>
+                            <br>
+                            <label for="manufactuerename"><b>Enter Wallet Address</b></label>
+                            <input type="text" placeholder="Enter Wallet Address" name="manufacturername"
+                                id="manufacturername" class="addproductfield" required>
+
+                            <!-- <br> -->
+                            <button type="button" class="secondarybtn" id="walletStatus" style="width: 350px;"
+                            onclick="connectMetamask()">Connect to Wallet</button>
+                            <button type="button" id="buyproduct" class="secondarybtn" onclick="buyProduct()">Buy
+                                Product</button>
+                            <!-- <button type="button" onclick="connectMetamask()">CONNECT TO METAMASK</button>
+                        <p id="accountArea">Connection Status: NOT CONNECTED to Metamask </p>
+                        <button type="button" onclick="connectContract()">CONNECT TO SMART CONTRACT</button> <br>
+                        <p id="contractArea">Connection Status: NOT CONNECTED to Smart Contract</p> -->
+
+                    </form>
+                </div>
+
+            </section>
+        </div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

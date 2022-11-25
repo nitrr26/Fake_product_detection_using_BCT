@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.3.0/sha256.min.js"
+        integrity="sha512-dDUVMeH1Ez3jWX4nyisY58pf+n5c/Mc4Ev5nlwXq248Z1WowwaEeY1te5z2GOMwzjOxi4oTMatcz+p7rXJKUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/addproduct.css">
+    <title>Minor Project | Blockchain Technology</title>
+</head>
+
+<body onload="connectContract()">
+
+
+    
+<div class="hero"> 
+  
+    <div>
+        <nav class="sectionbox">
+            <ul>
+                <li class="logo"><a href="./home2.html"><span>Minor</span>Project</a></li>
+                <li class="items hover-effect-1"><a href="./addproduct.html">Add products</a></li>
+                <li class="items hover-effect-1"><a href="./checkproduct.html">Check Products</a></li>
+                <li class="items hover-effect-1"><a href="./buyproduct.html">Buy Products</a></li>
+                <li class="items hover-effect-1"><a href="./sendproduct.html">Send Products</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+         </nav>
+        <section id="addproduct" class="sectionbox">
+        <div class="outercontainer">
+            <form class="modal-content animate formbox">
+                <div class="container">
+                    <h2>Add product</h2>
+                    <br><br>
+
+                    <label for="productname"><b>Product Name</b></label>
+                    <input type="text" placeholder="Enter product name" name="productname" id="productname"
+                        class="addproductfield" required>
+
+                    <label for="productQ"><b>Product Quantity</b></label>
+                    <input type="number" placeholder="Enter product Quantity" name="productQ" id="productQ"
+                        class="addproductfield" min="1" required>
+
+                    <label for="manufactuerename"><b>Enter Wallet Address</b></label>
+                    <input type="text" placeholder="Enter Wallet Address" name="manufacturername"
+                        id="manufacturername" class="addproductfield" required>
+
+                    <br>
+
+                    <button type="button" class="secondarybtn" id = "walletStatus"  style="width: 350px;" onclick="connectMetamask()">Connect to Wallet</button>
+                    <button type="button" class="secondarybtn" style="width: 195px;" onClick="addProduct()">Add product</button>
+                    <div id="qrcode" hidden></div>
+                    <a class="secondarybtn abutton" id="qrdl"  role="button" onclick="exit()">Download QR</a>
+
+
+                    <!-- <button type="button" onclick="connectMetamask()">CONNECT TO METAMASK</button> -->
+                    <!-- <p id="accountArea">Connection Status: NOT CONNECTED to Metamask </p> -->
+                    <!-- <button type="button" onclick="connectContract()">CONNECT TO SMART CONTRACT</button> <br>
+                    <p id="contractArea">Connection Status: NOT CONNECTED to Smart Contract</p> -->
+
+
+            </form>
+        </div>
+    </section></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+
+    
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

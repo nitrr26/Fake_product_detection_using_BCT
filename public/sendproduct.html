@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sendproduct.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="connectContract()">
+
+
+
+    <div class="hero">
+
+        <div>
+            <nav class="sectionbox">
+                <ul>
+                    <li class="logo"><a href="./home2.html">Minor<span>Project</span></a></li>
+                    <li class="items hover-effect-1"><a href="./addproduct.html">Add products</a></li>
+                    <li class="items hover-effect-1"><a href="./checkproduct.html">Check Products</a></li>
+                    <li class="items hover-effect-1"><a href="./buyproduct.html">Buy Products</a></li>
+                    <li class="items hover-effect-1"><a href="./sendproduct.html">Send Products</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <section id="sendproduct" class="sectionbox">
+                <div class="outercontainer">
+                    <form style="height: 250px" class="modal-content animate formbox" action="/">
+                        <div class="container">
+                            <label for="walletaddress"><b>Enter Wallet Address</b></label>
+                            <input type="text" placeholder="Enter Wallet Address" name="walletaddress"
+                                id="manufacturername" class="walletaddress" required>
+
+                            <!-- <br> -->
+                            <button type="button" class="secondarybtn" id="walletStatus" style="width: 180px;"
+                                onclick="connectMetamask()">Connect to Wallet</button>
+
+                            <button type="button" class="secondarybtn" id="sendproduct"
+                                style="width: 165px; padding-left: 15px;" onClick="sendProduct()">Send
+                                Product</button>
+                            <!-- <button type="button" onclick="connectMetamask()">CONNECT TO METAMASK</button> 
+    <p id="accountArea">Connection Status: NOT CONNECTED to Metamask </p> -->
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

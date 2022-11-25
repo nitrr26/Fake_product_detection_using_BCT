@@ -1,0 +1,47 @@
+
+  #checkproduct input[type="text"] {
+    width: 350px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  #checkproduct input[type="text"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .list{
+    padding-left: 1%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; */
+    justify-content: center; 
+
+    height: 250px;
+    width: 650px;
+    /* border: 2px solid red; */
+    background-color: white;
+    /* color: white; */
+    border-radius: 3px;
+
+    position:relative;
+    top: -100px;
+  
+
+}
+
+.items{
+   
+    list-style-type: none;
+    padding: 1%;
+    color: rgb(82, 82, 85);
+}
+
+.item{
+    font-weight: 600;
+    color: black
+}

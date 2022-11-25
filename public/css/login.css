@@ -1,0 +1,70 @@
+
+#loginform input[type="text"] {
+    width: 366px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  
+  #loginform input[type="password"] {
+    width: 366px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  #loginform button {
+    background-color: rgb(12, 85, 219);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 366px;
+    display: block;
+  }
+  
+  #loginform button:hover {
+    opacity: 0.8;
+  }
+  
+ 
+  /* Center the image and position the close button */
+  #loginform .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  #loginform img.avatar {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  
+  #loginform .container {
+    padding: 16px;
+  }
+  
+  #loginform span.psw {
+    float: right;
+    margin-top: 5%;
+  }
+  
+
+#loginform .modal-content {
+    height: 500px;
+}
+
+
+  
+
+
+
