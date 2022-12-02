@@ -45,7 +45,6 @@ The system keeps track of a product's status, including its manufacturer, presen
 * #### Process for end-user authentication:
     When the chain is complete, the customer will take the product, visit the website, upload the QR code, and then have access to all the product's details, from manufacture to final store. After learning more, the next question is whether or not to purchase the product.
     
-![App Home Page](https://github.com/nitrr26/Fake_product_detection_using_BCT/blob/master/public/img/c-01.png)
 
 ## Tech Stack
 ### Blockchain & Web Technology
