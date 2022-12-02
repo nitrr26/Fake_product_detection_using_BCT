@@ -81,6 +81,9 @@ The various sections of the applications accessible to user of the are described
 
 ### Home page of the application
 
+
+![Home Page](https://github.com/nitrr26/Fake_product_detection_using_BCT/blob/master/public/img/ad123.png "Home Page")
+
 Our Blockchain network for fake product detection project consists of three different nodes with different with roles and authorization. These nodes are as follows below: 
 
     1) Manufacturer 
